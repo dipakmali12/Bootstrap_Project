@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amezon Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container-fluid" id="header">
+        <section class="row">
+            <div class="col-12 ">
+                <nav class="navbar navbar-expand-lg bg-primary">
+                    <div class="container-fluid ">
+                        <!--<a class="navbar-brand" href="#">AMEZON</a>--> <!--Img logo shuold hare-->
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="mobile.html">mobile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="fashion.html">Fashion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="home_aplince.html">Home Aplince</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Abaut
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Amezon prime</a></li>
+                                        <li><a class="dropdown-item" href="#">Mx Player</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">New Realeases</a></li>
+                                    </ul>
+                                </li>
+                                <!--<li class="nav-item">
+                                    <a class="nav-link ">Disabled</a>
+                                </li>-->
+                            </ul>
+                            <!--<form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>-->
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+        </section>
+    </section> <!--end of header-->
+    <section class="container-fluid mt-1">
+        <section class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://m.media-amazon.com/images/G/31/IMG25/Fashion/Event/AugArt/AF/Unrec/Tophero/SPB_1500x460._SX1500_QL85_FMpng_.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/G/31/IMG25/Fashion/Event/AugArt/AF/Unrec/Tophero/Watches_1500x460._SX1500_QL85_FMpng_.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/G/31/IMG25/Fashion/Event/AugArt/AF/Revised/PC-SD-EVENT-BANNER---UNDER-399._CB804799979_.gif"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </section> <!--end hero section-->
+    <section class="container-fluid my-5 " id="hightlight">
+        <section class="container">
+            <section class="row">
+                <div class="col-12 text-center  ">
+                    <h2 class="fs-1">Fee drop highlights</h2>
+                </div>
+                <div class="col-12 col-sm-4 bg-info mt-3">
+                    <h4>0%</h4>
+                    <p>Referral fees on products under ₹300</p>
+                </div>
+                <div class="col-12 col-sm-4 bg-success mt-3">
+                    <h4>₹65</h4>
+                    <p>National shipping rates now, from ₹77</p>
+                </div>
+                <div class="col-12 col-sm-4 bg-info mt-3">
+                    <h4>Up to 90%</h4>
+                    <p>Savings in selling fees on the sale of second unit</p>
+                </div>
+
+            </section>
+        </section>
+    </section>
+    <!--end of hightlight section-->
+    <section class="container- fluid my-5" id="category">
+        <section class="container">
+            <section class="row">
+                <div class="col-12 text-center bg-warning">
+                    <h2>Category level impact</h2>
+                </div>
+                <div class="col-12 col-md-6 mt-2 bg-light">
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/G/31/amazonservices/Nazar-Buta-Cotton-Saree_grande.jpg"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Apparel</h5>
+                                    <p class="card-text">See up to 16.5% reduction in referral fee for products <=
+                                            Rs.300. </p>
+                                            <p class="card-text"><small class="text-muted">Click here--</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-2 bg-light">
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/G/31/amazonservices/Home_lifestyle.jpg"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Home</h5>
+                                    <p class="card-text">See up to 15.5% reduction in referral fee for products <=
+                                            Rs.300.</p>
+                                            <p class="card-text"><small class="text-muted">Click Here--</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 bg-light">
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/G/31/amazonservices/Shoes_lifestyle.jpg"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Shoes</h5>
+                                    <p class="card-text">See up to 15% reduction in referral fee for products <= Rs.300.
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">Click Here--</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3 bg-light">
+                    <div class="card border-0 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/G/31/amazonservices/Jewellery_lifestyle.jpg"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body bg-light">
+                                    <h5 class="card-title">Jewelry</h5>
+                                    <p class="card-text">See up to 17.5% reduction in referral fee for products <=
+                                            Rs.300. </p>
+                                            <p class="card-text"><small class="text-muted">Click Here--</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+    <!--end of categery level-->
+    <section class="container fluid">
+        <section class="container">
+            <section class="row">
+                <div class="col-12 text-center bg-primary">
+                    <h2>Here's what Amazon.in sellers are saying:</h2>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <img src="https://m.media-amazon.com/images/G/31/amazonservices/Sunehra_Koshi.webp"
+                        class="img-fluid" alt="">
+                    <h4>CRACK OF DAWN CRAFTS</h4>
+                    <p>From five members to fifteen, a little trust can go a long way.</p>
+                    <h4>Sunehra Koshi</h4>
+                    <h5>Founder, Crack of Dawn Crafts</h5>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <img src="https://m.media-amazon.com/images/G/31/amazonservices/Dheepakh_Rajaram.webp"
+                        class="img-fluid" alt="">
+                    <h4>GOODNESS PET FOOD</h4>
+                    <p>We went from sales of 10,000 rupees to 5 lakh in just two and a half years.</p>
+                    <h4>Dheepakh Rajaram</h4>
+                    <h5>Founder, Goodness Pet Food</h5>
+                </div>
+
+            </section>
+        </section>
+    </section> <!--end of seller-->
+    <section class="container-fluid my-4 " id="in">
+        <section class="container card border-primary">
+            <section class="row">
+                <div class="col-12 text-center">
+                    <h2>How to sell on Amazon.in?</h2>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="card border-0 mb-3" >
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/G/31/sellonamazon/experiment/HowSellingonAmazonWorks-Template3-Asset1._CB406684202_._SY200_.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 mt-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">STEP 1: Register your account</h5>
+                                    <p class="card-text">Register on Amazon with GST/PAN details and an active bank account</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="card border-0 mb-3" >
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/G/31/sellonamazon/experiment/HowSellingonAmazonWorks-Template3-Asset3._CB406684197_._SY200_.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 mt-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">STEP 2: Choose storage & shipping</h5>
+                                    <p class="card-text">Choose storage, packaging, and delivery options</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 mb-3" >
+                        <div class="row g-0">
+                            <div class="col-md-4 ">
+                                <img src="https://m.media-amazon.com/images/G/31/sellonamazon/experiment/HowSellingonAmazonWorks-Template3-Asset2._CB406684202_._SY200_.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 mt-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">STEP 3: List your products</h5>
+                                    <p class="card-text">List your products by providing product and brand details</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 mb-3" >
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/G/31/sellonamazon/experiment/WhySellonAmazon-SecurePayment-Option4._SL1280_FMpng_.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 mt-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">STEP 4: Complete orders & get paid</h5>
+                                    <p class="card-text">Deliver orders to customers on time and get paid within 7 days of delivery</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!--start footer-->
+    <section class="container-fluid bg-secondary">
+        <section class="container">
+            <section class="row">
+                <div class="col-12 col-md-3">
+                    <ul>
+                        <li class="fs-4">Get to Know Us</li>
+                        <li>About Amazon</li>
+                        <li>Careers</li>
+                        <li>Press Releases</li>
+                        <li>Amazon Science</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul>
+                        <li class="fs-4">Connect with Us</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul>
+                        <li class="fs-4">Make Money with Us</li>
+                        <li>Sell under Amazon Acceleraton</li>
+                        <li>Sell on Amazon</li>
+                        <li>Become an Affiliate</li>
+                        <li>Your Account</li>
+                        <li>Returns Centre</li>
+                        <li>100% Purchase Protection</li>
+                        <li>Amazon App Download</li>
+
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul>
+                        <li class="fs-4">Let Us Help You</li>
+                        <li>Your Account</li>
+                        <li>Returns</li>
+                        <li>Amazon Pay on Merchants</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
